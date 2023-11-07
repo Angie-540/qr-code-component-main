@@ -1,0 +1,96 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+
+:root {
+    --white:hsl(0,0%,100%);
+    --light-gray:hsl(212, 45%, 89%);
+    --grayish-blue:hsl(220, 15%, 55%):
+    --dark-blue:hsl(28=18, 44%, 22%);
+
+/* font-weight */
+--weight-400:400;
+--weight-700:700;
+
+--font:"Outift", sans-serif;
+
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--light-gray);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    
+}
+
+.qr-container {
+    background-color: var(--white);
+    width: (20%, 20rem); 
+    width:40%;
+    max-width: 25rem;
+    border-radius: 20px; 
+    text-align: center;
+    gap: 0.2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.img-container {
+  width: 100%;
+  max-width: 20rem;
+  margin: 1rem; 
+  /* background-color: black; */
+}
+
+.img-container img {
+    display: block;
+    border-radius: 10px;
+    margin: 0.2rem;
+    width: 100%;
+    max-width:18rem;
+} 
+
+.info-block {
+    padding: 0.5rem;
+  }
+
+.info-block h1 {
+    font-size: var(--weight-700); 
+    color: var(--dark-blue);
+  }
+  
+.info-block p {
+    /* font-size: 15px; */
+    padding: 0.5rem;
+    color: var(--grayish-blue);
+  }
+
+  @media screen and (max-width: 375px)  {
+    .qr-container {
+      width: (10%, 10rem);
+      text-align: center;
+      gap: 0.2rem;
+  }
+    .img-container img {
+        /* max-width: 500px; */
+    } 
+    
+    
+  }
+
+  /* @media screen and (max-width: 425px)  {
+    .img-container img {
+        max-width: ;
+    } 
+    
+    
+  } */
